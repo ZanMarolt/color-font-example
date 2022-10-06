@@ -1,0 +1,30 @@
+* {
+  font-family: "Nabla";
+}
+
+:root {
+  --color: red;
+}
+
+
+html {
+  background-color: #1E1E1E;
+}
+
+.wrapper {
+  padding: 5rem;
+}
+
+@font-palette-values --MyColor {
+  font-family: Nabla;
+  base-palette: 2;
+  override-colors: 1 red;
+}
+
+h1 {
+  font-family: "Nabla";
+  font-size: 10rem;
+  font-palette: --MyColor;
+  transition: font-palette 2s ease-in-out;
+}
+
